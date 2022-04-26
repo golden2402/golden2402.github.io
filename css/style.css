@@ -155,11 +155,6 @@ a {
 }
 
 .container {
-  min-width: 500px;
-  margin: auto;
-}
-
-.container {
   /*min-width: 500px;*/
   margin: auto;
 }
