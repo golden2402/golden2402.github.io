@@ -56,7 +56,8 @@ h2 {
 
 img {
   width: 100%;
-  height: auto;
+  height: 60vh;
+  object-fit: cover;
 }
 
 a {
@@ -161,4 +162,14 @@ a {
 
 footer {
   margin-top: 44px;
+}
+
+@media all and (max-width:700px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    height: 40vh;
+  }
 }
