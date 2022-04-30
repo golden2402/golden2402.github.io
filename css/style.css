@@ -160,8 +160,14 @@ a {
   margin: auto;
 }
 
-footer {
-  margin-top: 44px;
+footer div {
+  height: 100%;
+  font-family: 'Quicksand', serif;
+  font-size: 20px;
+  display: flex;
+  align-content: center;
+  padding: 5px 25px;
+  color: rgba(255, 255, 255, 0.65);
 }
 
 @media all and (max-width:700px) {
