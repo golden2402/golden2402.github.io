@@ -9,13 +9,14 @@ body {
 }
 
 header, footer {
-  background-color: turquoise;
+  background-color: lightseagreen;
   text-align: left;
   /*min-width: 500px;*/
 }
 
 header {
   font-family: 'Quicksand', serif;
+  background-image: linear-gradient(lightgreen, lightseagreen);
   color: #fff;
   min-height: 100vh;
   display: flex;
@@ -25,7 +26,8 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(40%, 1fr) ) ;
   grid-gap: 20px;
-  margin-top: 44px;
+
+  margin: 20px;
   
   justify-items: center;
   justify-content: center;
@@ -45,18 +47,20 @@ h1 {
 h2 {
   font-family: 'Quicksand', serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 600;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
   text-align: left;
   text-transform: uppercase;
-  color: turquoise;
-  padding: 10px 0px 10px 10px;
+  color: lightseagreen;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 img {
   width: 100%;
-  height: 60vh;
+  height: 45vh;
   object-fit: cover;
 }
 
@@ -95,7 +99,8 @@ a {
 }
 
 .myButton:hover {
-    background-color: rgba(0, 0, 0, 0.25);
+  transition-duration: 0.4s;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .myButton:active {
@@ -117,7 +122,6 @@ a {
   text-align: left;
   color: #4a4a4a;
   padding: 10px;
-  border-top: 1px solid #4a4a4a;
 }
 
 .container {
@@ -138,9 +142,12 @@ footer div {
 @media all and (max-width:700px) {
   main {
     grid-template-columns: 1fr;
+
+    margin-left: 0;
+    margin-right: 0;
   }
 
   img {
-    height: 40vh;
+    height: 35vh;
   }
 }
